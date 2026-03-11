@@ -9,3 +9,8 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 ### Chapter 1: Truth or Consequences
 - Write CLI programs in `/src/bin/<name>` and run them with `cargo run --bin <name>`
 - Write tests with `assert_cmd` to test success, failure, and compare stdout
+
+### Chapter 2: Test for Echo
+- Process command-line arguments with the `clap` crate
+- Test for text that is printed to `STDOUT` and `STDERR`
+- Slices and `?` operator
