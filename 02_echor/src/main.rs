@@ -1,24 +1,20 @@
-use clap::Parser;
-
-#[derive(Parser)]
-#[command(name = "echor")]
-#[command(version = "0.1.0")]
-#[command(author = "Bthxtly <bthxtly@gmail.com>")]
-#[command(about = "Rust echo")]
-struct Cli {
-    #[arg(value_name = "TEXT")]
-    text: Option<Vec<String>>,
-    #[arg(short = 'n')]
-    #[arg(action = clap::ArgAction::SetTrue)]
-    #[arg(help = "Do not print newline")]
-    omit_newline: bool,
-}
+// TODO: support interpretation of backslash escapes:
+// - \ backslash
+// - \a alert (BEL)
+// - \b backspace
+// - \c produce no further output
+// - \e escape
+// - \f form feed
+// - \n new line
+// - \r carriage return
+// - \t horizontal tab
+// - \v vertical tab
+// - \0NNN byte with octal value NNN (1 to 3 digits)
+// - \xHH byte with hexadecimal value HH (1 to 2 digits)
 
 fn main() {
-    let cli = Cli::parse();
-    let ending = if cli.omit_newline { "" } else { "\n" };
-
-    if let Some(text) = cli.text.as_deref() {
-        print!("{}{}", text.join(" "), ending);
+    if let Err(e) = echor::run() {
+        eprintln!("{}", e);
+        std::process::exit(1);
     }
 }
