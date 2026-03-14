@@ -14,3 +14,9 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Process command-line arguments with the `clap` crate
 - Test for text that is printed to `STDOUT` and `STDERR`
 - Slices and `?` operator
+
+### Chapter 3: On the Catwalk
+- Use `Result` to deal with errors
+- Separate codes from `main.rs` to `lib.rs`
+- Read `stdin` and files with `std::io`
+- *test-driven development* (TDD)
