@@ -20,3 +20,7 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Separate codes from `main.rs` to `lib.rs`
 - Read `stdin` and files with `std::io`
 - *test-driven development* (TDD)
+
+### Chapter 4: Head Aches
+- Use `BufRead::read_line` instead of `BufRead::lines` to preserve the original line endings
+- Use `From::from` to create the `Err` part of `MyResult`

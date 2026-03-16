@@ -8,5 +8,10 @@ echo *TEXT:
 cat *FILES:
   @cargo run --quiet -- {{FILES}}
 
-default:
-    echo 'Hello, world!'
+[working-directory: '04_headr']
+head *FILES:
+  @cargo run --quiet -- {{FILES}}
+
+[no-cd]
+test *OPTIONS:
+  @cargo test {{OPTIONS}}
