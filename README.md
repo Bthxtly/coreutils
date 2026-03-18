@@ -24,3 +24,9 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 ### Chapter 4: Head Aches
 - Use `BufRead::read_line` instead of `BufRead::lines` to preserve the original line endings
 - Use `From::from` to create the `Err` part of `MyResult`
+
+### Chapter 5: Word to Your Mother
+- Use `Iterator::all`. There are some similarities like `any`, `filter`, `map`, `find`, `position`,
+  `cmp`, `min_by` and `max_by`
+- Use `impl trait` as function parameter
+- Use `std::io::Cursor` to create a fake file handle

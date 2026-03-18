@@ -1,0 +1,15 @@
+[package]
+name = "wcr"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = "4.6.0"
+clippy = "0.0.302"
+
+[dev-dependencies]
+anyhow = "1.0.102"
+assert_cmd = "2.2.0"
+predicates = "3.1.4"
+pretty_assertions = "1.4.1"
+rand = "0.8.0"

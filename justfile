@@ -12,6 +12,10 @@ cat *FILES:
 head *FILES:
   @cargo run --quiet -- {{FILES}}
 
+[working-directory: '05_wcr']
+wc *FILES:
+  @cargo run --quiet -- {{FILES}}
+
 [no-cd]
 test *OPTIONS:
   @cargo test {{OPTIONS}}
