@@ -30,3 +30,8 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
   `cmp`, `min_by` and `max_by`
 - Use `impl trait` as function parameter
 - Use `std::io::Cursor` to create a fake file handle
+
+### Chapter 6: Den of Uniquity
+- Use `map_err` with `?` to send error information gracefully
+- Use closure to reduce repetitive code while capturing values from the enclosing scope
+- Use `std::io::Write` trait and `write!()` to output to a file or stdout
