@@ -35,3 +35,8 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Use `map_err` with `?` to send error information gracefully
 - Use closure to reduce repetitive code while capturing values from the enclosing scope
 - Use `std::io::Write` trait and `write!()` to output to a file or stdout
+
+### Chapter 7: Finders Keepers
+- Use functional style programming(iterator, map, filter)
+- Use `walkdir` to find directories and files
+- Use `num_args` to accept many values for one option

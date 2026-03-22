@@ -2,23 +2,27 @@
 
 [working-directory: '02_echor']
 echo *TEXT:
-  @cargo run --quiet -- {{TEXT}} 2>/dev/null
+  @cargo run --quiet -- {{TEXT}}
 
 [working-directory: '03_catr']
 cat *FILES:
-  @cargo run --quiet -- {{FILES}} 2>/dev/null
+  @cargo run --quiet -- {{FILES}}
 
 [working-directory: '04_headr']
 head *FILES:
-  @cargo run --quiet -- {{FILES}} 2>/dev/null
+  @cargo run --quiet -- {{FILES}}
 
 [working-directory: '05_wcr']
 wc *FILES:
-  @cargo run --quiet -- {{FILES}} 2>/dev/null
+  @cargo run --quiet -- {{FILES}}
 
 [working-directory: '06_uniqr']
 uniq *FILES:
-  @cargo run --quiet -- {{FILES}} 2>/dev/null
+  @cargo run --quiet -- {{FILES}}
+
+[working-directory: '07_findr']
+find *FILES:
+  @cargo run --quiet -- {{FILES}}
 
 [no-cd]
 test *OPTIONS:
