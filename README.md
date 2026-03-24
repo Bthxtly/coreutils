@@ -46,3 +46,8 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Parse a string with `.parse()` and regular expression(`Regex`)
 - Parse `.csv` files with `csv` crate with custom delimiter
 - Return `&str` from a function with lifetime indicator
+
+### Chapter 9: Jack the Grepper
+- Use `std::mem::take` to take the ownership of the line, which avoids unnecessary copies
+- Get file meta data with `std::fs::metadata`
+- Iterate lines of a file while preserving newline indicator with `read_line` from `std::io::ReadBuf`
