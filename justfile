@@ -24,6 +24,10 @@ uniq *FILES:
 find *FILES:
   @cargo run --quiet -- {{FILES}}
 
+[working-directory: '08_cutr']
+cut *FILES:
+  @cargo run --quiet -- {{FILES}}
+
 [no-cd]
 test *OPTIONS:
   @cargo test {{OPTIONS}}

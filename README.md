@@ -40,3 +40,9 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Use functional style programming(iterator, map, filter)
 - Use `walkdir` to find directories and files
 - Use `num_args` to accept many values for one option
+
+### Chapter 8: Shave and a Haircut
+- Learn more gracefully functional programming(`flatten`, `flat_map`)
+- Parse a string with `.parse()` and regular expression(`Regex`)
+- Parse `.csv` files with `csv` crate with custom delimiter
+- Return `&str` from a function with lifetime indicator
