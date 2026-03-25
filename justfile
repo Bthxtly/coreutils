@@ -32,6 +32,10 @@ cut *FILES:
 grep *FILES:
   @cargo run --quiet -- {{FILES}}
 
+[working-directory: '10_commr']
+comm *FILES:
+  @cargo run --quiet -- {{FILES}}
+
 [no-cd]
 test *OPTIONS:
   @cargo test {{OPTIONS}}
