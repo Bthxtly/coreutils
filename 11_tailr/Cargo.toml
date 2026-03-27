@@ -1,0 +1,19 @@
+[package]
+name = "tailr"
+version = "0.1.0"
+edition = "2024"
+authors = ["Bthxtly <bthxtly@gmail.com>"]
+discription = "Rust version of `tail`"
+
+[dependencies]
+anyhow = "1.0.102"
+clap = { version = "4.6.0", features = ["derive"] }
+num = "0.4.3"
+once_cell = "1.21.4"
+regex = "1.12.3"
+
+[dev-dependencies]
+assert_cmd = "2.2.0"
+predicates = "3.1.4"
+pretty_assertions = "1.4.1"
+rand = "0.8"

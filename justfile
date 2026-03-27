@@ -36,6 +36,10 @@ grep *FILES:
 comm *FILES:
   @cargo run --quiet -- {{FILES}}
 
+[working-directory: '11_tailr']
+tail *FILES:
+  @cargo run --quiet -- {{FILES}}
+
 [no-cd]
 test *OPTIONS:
   @cargo test {{OPTIONS}}

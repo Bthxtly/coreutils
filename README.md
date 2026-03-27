@@ -54,3 +54,9 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 
 ### Chapter 10: Boston Commons
 - Use `Ord::cmp` to compare two strings
+
+### Chapter 11: Tailor Swyfte
+- Indicate multiple trait bounds on a type using the `where` clause
+- Benchmark program with `hyperfine` to compare runtime performance
+- Use `std::io::Seek` trait to skip bytes
+- Refactor program early and frequently
