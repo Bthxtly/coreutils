@@ -60,3 +60,8 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Benchmark program with `hyperfine` to compare runtime performance
 - Use `std::io::Seek` trait to skip bytes
 - Refactor program early and frequently
+
+### Chapter 12: Fortunate Son
+- Use `OsStr` and `OsString` to deal with filenames, which makes the project more portable
+- Use `Box<dyn trait>` to receive values of different types
+- Use `rand` trait to pick elements randomly
