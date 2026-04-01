@@ -65,3 +65,8 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Use `OsStr` and `OsString` to deal with filenames, which makes the project more portable
 - Use `Box<dyn trait>` to receive values of different types
 - Use `rand` trait to pick elements randomly
+
+### Chapter 13: Rascalry
+- Deal with date with `chrono` crate
+- Get groups of items in `Vec` with `.chunks(num)`
+- Use `itertools::izip` to iterate multiple iterators simultanously
