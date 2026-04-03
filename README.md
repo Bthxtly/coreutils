@@ -70,3 +70,10 @@ This repo is my own learning experience with [Command-Line Rust](https://www.ore
 - Deal with date with `chrono` crate
 - Get groups of items in `Vec` with `.chunks(num)`
 - Use `itertools::izip` to iterate multiple iterators simultanously
+
+### Chapter 14: Elless Island
+- Understand information showed by `ls -l`
+- Create output table with `tabular` crate
+- Get entry's information with some `metadata` utilities
+- Get user name and group name from ID's with `users` crate
+- Convert time of `std::time::System` to human readable format with `chrono::DateTime::format`

@@ -48,6 +48,10 @@ fortune *FILES:
 cal *FILES:
   @cargo run --quiet -- {{FILES}}
 
+[working-directory: '14_lsr']
+ls *FILES:
+  @cargo run --quiet -- {{FILES}}
+
 [no-cd]
 test *OPTIONS:
   @cargo test {{OPTIONS}}
